@@ -294,9 +294,13 @@ textarea {
   display: flex;
   justify-content: center;
   position: relative;
-  margin-bottom: 80px;
 }
 
+@media (min-width: 769px) {
+  .header {
+    margin-bottom: 80px;
+  }
+}
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -353,37 +357,67 @@ textarea {
   cursor: pointer;
 }
 
-.hero {
-  height: 75vh;
-  display: flex;
-  margin-bottom: 80px;
+@media (min-width: 769px) {
+  .hero {
+    display: flex;
+    height: 75vh;
+    margin-bottom: 80px;
+  }
 }
 
 .hero-col-background {
-  /*background-attachment: fixed;*/
-
   background-size: cover;
   background-image: url("../img/katie-paige-ux-designer.jpg");
 }
 
+@media (max-width: 768px) {
+  .hero-col-background {
+    height: 63vh;
+  }
+}
+
 .hero-col {
-  height: 100%;
+  /*height: 100%;*/
+}
+
+@media (min-width: 769px) {
+  .hero-col {
+    height: 100%;
+  }
 }
 
 .hero-col-left {
-  width: 40%;
+  /*width: 40%;*/
+}
+@media (min-width: 769px) {
+  .hero-col-left {
+    width: 40%;
+  }
 }
 
 .hero-col-right {
-  display: flex;
-  align-items: center;
+  padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .hero-col-right {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
 }
 
 .hero-text {
-  width: 60%;
-  transform: translate(-15%, 20%);
-  padding: 60px;
   background-color: #d8eae8;
+  padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .hero-text {
+    width: 60%;
+    transform: translate(-15%, 20%);
+    padding: 60px;
+  }
 }
 
 .hero-text h1 {
@@ -414,11 +448,23 @@ textarea {
 }
 
 .subtext-container {
-  padding: 80px;
+  padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .subtext-container {
+    padding: 80px;
+  }
 }
 
 .subtext {
-  width: 60%;
-  padding: 60px;
+  padding: 30px;
   background-color: #d8eae8;
+}
+
+@media (min-width: 768px) {
+  .subtext {
+    width: 60%;
+    padding: 60px;
+  }
 }
